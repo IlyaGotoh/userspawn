@@ -54,5 +54,5 @@ Upon user removal, that cgroup is then cleaned up, as triggered by (e)logind.
 ## Misc
 If you encounter any issues, feel free to make a github issue. Similarly such for feature requests, although the scope is limited.
 
-Licensed under `LGPL-3.0-or-later`, with the `LGPL-3.0 Linking Exception`.
+Licensed under `LGPL-3.0-or-later`.
 
