@@ -37,6 +37,12 @@ For example, for dinit, you may want:
 
 ```bash
 #!/bin/bash
+
+#> Create the dinit.d directory, and related files, if it doesn't exist already
+if [ ! -d "$HOME/.config/dinit.d" ]; then
+    mkdir -p "$HOME/.config/dinit.d/boot.d" && \
+    echo -e "type = internal\nwaits-for.d: ./boot.d/" > "$HOME/.config/dinit.d/boot"
+fi
 exec dinit --user
 ```
 
